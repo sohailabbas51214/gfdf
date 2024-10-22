@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Multicolor Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Multicolor Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="posts">
+            <h2>Blog Posts</h2>
+            <div class="post">
+                <h3>Post Title</h3>
+                <p>Post content goes here...</p>
+                <button onclick="likePost()">Like</button>
+                <span id="like-count">0 Likes</span>
+                <div class="comments">
+                    <input type="text" id="comment-input" placeholder="Add a comment...">
+                    <button onclick="addComment()">Comment</button>
+                    <ul id="comment-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="upload">
+            <h2>Upload Files</h2>
+            <input type="file" id="file-upload" accept=".pdf,.doc,.docx">
+            <button onclick="uploadFile()">Upload</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
